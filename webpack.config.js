@@ -42,11 +42,15 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.join(__dirname, "/"),
+    static: {
+      directory: path.join(__dirname, "/"),
+    },
     port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    hotOnly: true
+    devMiddleware: {
+      publicPath: "https://localhost:3000/dist/",
+    },
+    hot: "only", // hot:true
   },
 
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: []
 };
