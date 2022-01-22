@@ -9,8 +9,11 @@ function Logo(props) {
         Hello, my name is
       </div>
 
-      <h1 className="ds-logo__title">
-        Ruan <br /> Kovalczyk
+      <h1 className="ds-logo__title glitch" title="Ruan">
+        Ruan
+      </h1>
+      <h1 className="ds-logo__title glitch" title="Kovalczyk">
+        Kovalczyk
       </h1>
     </div>
   )
