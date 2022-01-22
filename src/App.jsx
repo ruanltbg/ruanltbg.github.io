@@ -16,7 +16,7 @@ function App(props) {
       <Social />
 
       <div className="ds-app__bg">
-        <ParticlesBg color="#dbdbdb" num={50} type="cobweb" bg={true} />
+        <ParticlesBg color="#6292fa" num={200} type="cobweb" bg={true} />
       </div>
     </div>
   );
