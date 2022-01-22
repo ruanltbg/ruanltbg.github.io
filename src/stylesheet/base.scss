@@ -1,0 +1,44 @@
+@import "./variables";
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #18222d;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $main-text-color;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: $link-text-color;
+  text-decoration: none;
+  transition: 0.2s;
+  font-weight: bold;
+
+  &:hover {
+    color: $hover-text-color;
+  }
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    justify-content: start;
+    padding: 25% 20px 0;
+  }
+}
+
+@import "./grid";
