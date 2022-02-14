@@ -12,7 +12,7 @@ function Logo(props) {
       <h1 className="ds-logo__title glitch" title="Ruan">
         Ruan
       </h1>
-      <h1 className="ds-logo__title glitch" title="Kovalczyk">
+      <h1 className="ds-logo__title glitch" title="Carlos">
         Carlos
       </h1>
     </div>
