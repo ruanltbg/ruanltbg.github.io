@@ -23,7 +23,7 @@ function About() {
       <p className="about__text">
         I am also a <strong>Co-founder</strong> at{" "}
         <a
-          href="https://easymovie.io"
+          href="https://easymovie.com.br"
           target="_blank"
           rel="noopener noreferrer"
           className="highlight"
