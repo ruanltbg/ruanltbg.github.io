@@ -1,25 +1,24 @@
-import { hot } from 'react-hot-loader/root';
 import React from "react";
-import ParticlesBg from 'particles-bg'
-
+import ParticlesBg from 'particles-bg';
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Social from "./components/Social";
 import "./App.scss";
 
-import Logo from "./components/Logo";
-import Social from "./components/Social";
-import About from "./components/About";
-
-function App(props) {
+function App() {
   return (
-    <div className="container">
-      <Logo />
-      <About />
-      <Social />
+    <div className="app-wrapper">
+      <main className="main-content">
+        <Hero />
+        <About />
+        <Social />
+      </main>
 
-      <div className="ds-app__bg">
-        <ParticlesBg color="#6292fa" num={200} type="cobweb" bg={true} />
+      <div className="particles-bg">
+        <ParticlesBg color="#3b82f6" num={50} type="cobweb" bg={true} />
       </div>
     </div>
   );
 }
 
-export default hot(App);
+export default App;

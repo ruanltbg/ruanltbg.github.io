@@ -1,27 +1,36 @@
-import React from "react"
+import React from "react";
+import "./About.scss";
 
-import './About.scss'
-
-function About(props) {
+function About() {
   return (
-    <div className="row ds-about">
-      <p>Hi I am a Software Engineer.</p>
-      <p>
-        Working at&nbsp;
-        <a href="https://www.workday.com/en-us/products/spend-management/strategic-sourcing.html" target="_blank" title="workday.com">
+    <div className="about">
+      <p className="about__text">
+        I am a passionate Software Engineer currently working at{" "}
+        <a
+          href="https://www.workday.com/en-us/products/spend-management/strategic-sourcing.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="highlight"
+        >
           Workday Strategic Sourcing
-        </a>
-        <br/>
-        I am also a <strong>co-founder</strong> at&nbsp;
-        <a href="https://easymovie.io" target="_blank" title="easymovie.io">
+        </a>.
+      </p>
+      <p className="about__text">
+        I am also a <strong>Co-founder</strong> at{" "}
+        <a
+          href="https://easymovie.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="highlight"
+        >
           EasyMovie
         </a>.
       </p>
-      <p>
-        I am located at Toronto Canada 🇨🇦 but I am from Brazil 🇧🇷.
+      <p className="about__location">
+        Based in Toronto, Canada 🇨🇦 • Originally from Brazil 🇧🇷
       </p>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

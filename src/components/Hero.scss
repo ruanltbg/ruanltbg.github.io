@@ -1,0 +1,60 @@
+.hero {
+    margin-bottom: 2rem;
+
+    &__greeting {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    &__title {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: -1px;
+
+        .text-gradient {
+            background: linear-gradient(to right,
+                    var(--primary-color),
+                    var(--secondary-color),
+                    #38bdf8,
+                    var(--primary-color));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientMove 4s linear infinite;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+        font-weight: 400;
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 1.2rem;
+        }
+    }
+}
